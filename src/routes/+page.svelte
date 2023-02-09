@@ -1,4 +1,11 @@
-<div class="container mx-auto my-10 font-Inter">
+<script>
+	import Img from '@zerodevx/svelte-img';
+	import customer from '$lib/assets/customer.png?run';
+	import hrms from '$lib/assets/hrms.png?run';
+	import partner from '$lib/assets/partner.png?run';
+</script>
+
+<div class="max-w-screen-xl mx-auto my-10 font-Inter">
 	<nav class="flex justify-between uppercase">
 		<a class="underline" href="">Vinay Kumar</a>
 
@@ -39,11 +46,11 @@
 			</p>
 		</div>
 
-		<img class="justify-self-end" src="partner.png" alt="" />
+		<Img class="justify-self-end" src={partner} alt="" />
 	</div>
 
 	<div class="flex items-center justify-between container mx-auto">
-		<img class="justify-self-end" src="customer.png" alt="" />
+		<Img class="justify-self-end" src={customer} alt="" />
 
 		<div>
 			<p class="font-bold text-2xl mb-4">TechFino Customer Application</p>
@@ -67,6 +74,6 @@
 			</p>
 		</div>
 
-		<img class="justify-self-end" src="hrms.png" alt="" />
+		<Img class="justify-self-end" src={hrms} alt="" />
 	</div>
 </div>
