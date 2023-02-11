@@ -3,6 +3,7 @@
 	import customer from '$lib/assets/customer.png?run';
 	import hrms from '$lib/assets/hrms.png?run';
 	import partner from '$lib/assets/partner.png?run';
+	import Icon from '@iconify/svelte';
 </script>
 
 <div class="max-w-screen-xl mx-auto my-10 font-Inter">
@@ -36,7 +37,7 @@
 	</main>
 
 	<div class="flex items-center justify-between container mx-auto">
-		<div>
+		<div class="px-32">
 			<p class="font-bold text-2xl mb-4">TechFino Partner Application</p>
 			<p>
 				Designed the partner application for the techfino company to help their partners maximize
@@ -44,6 +45,12 @@
 				partners to utilize the Partner Application, simplifying the process of leading customers to
 				services.
 			</p>
+			<button
+				class="bg-gray-900 hover:bg-gray-600 text-white text-lg py-2 px-5 my-3 rounded-full flex items-center "
+			>
+				See More
+				<Icon icon="material-symbols:arrow-forward-rounded" height="24" class="ml-1" />
+			</button>
 		</div>
 
 		<Img class="justify-self-end" src={partner} alt="" />
@@ -52,7 +59,7 @@
 	<div class="flex items-center justify-between container mx-auto">
 		<Img class="justify-self-end" src={customer} alt="" />
 
-		<div>
+		<div class="px-32">
 			<p class="font-bold text-2xl mb-4">TechFino Customer Application</p>
 			<p>
 				Designed the partner application for the techfino company to help their partners maximize
@@ -60,11 +67,17 @@
 				partners to utilize the Partner Application, simplifying the process of leading customers to
 				services.
 			</p>
+			<button
+				class="bg-gray-900 hover:bg-gray-600 text-white text-lg py-2 px-5 my-3 rounded-full flex items-center "
+			>
+				<Icon icon="material-symbols:arrow-back-rounded" height="24" class="mr-1" />
+				See More
+			</button>
 		</div>
 	</div>
 
 	<div class="flex items-center justify-between container mx-auto">
-		<div>
+		<div class="px-32">
 			<p class="font-bold text-2xl mb-4">TechFino HRMS Application</p>
 			<p>
 				Designed an HRMS application for Techfino company to streamline their HR processes.. We
@@ -72,6 +85,12 @@
 				gain insight into the details, and progress of each employee, as well as provide them with
 				the required records.
 			</p>
+			<button
+				class="bg-gray-900 hover:bg-gray-600 text-white text-lg py-2 px-5 my-3 rounded-full flex items-center "
+			>
+				See More
+				<Icon icon="material-symbols:arrow-forward-rounded" height="24" class="ml-1" />
+			</button>
 		</div>
 
 		<Img class="justify-self-end" src={hrms} alt="" />
