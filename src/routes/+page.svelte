@@ -8,7 +8,7 @@
 
 <div class="max-w-screen-xl mx-auto my-10 font-Inter">
 	<nav class="flex justify-between uppercase">
-		<a class="underline" href="">Vinay Kumar</a>
+		<a class="underline" href="/">Vinay Kumar</a>
 
 		<div class="flex space-x-24">
 			<a href="">Work</a>
